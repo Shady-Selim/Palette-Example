@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="shape_height">40dp</dimen>
+    <dimen name="swatch_padding">4dp</dimen>
+</resources>

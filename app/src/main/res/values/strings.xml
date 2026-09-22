@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Palette Demo</string>
+    <string name="select_image">select image</string>
+    <string name="palette_selected_image">palette selected image</string>
+</resources>
