@@ -4,12 +4,20 @@ A small Android sample app that extracts prominent colors from an image using th
 
 Pick a photo from the device gallery, and the app decodes the bitmap, builds a `Palette`, and shows every swatch plus named groups (muted, vibrant, and their light/dark variants).
 
+You can find more description and examples of its usage in this [article](https://www.linkedin.com/pulse/android-system-palette-available-everyone-shady-yehia-selim-msc-mba-iqhne/)
+
 ## Features
 
 - **Photo picker** — Select any image via the system photo picker (`PickVisualMedia`).
 - **Palette generation** — Uses `Palette.Builder` on a software-backed, mutable bitmap suitable for palette analysis.
 - **Swatch UI** — Lists all swatches and labeled rows for muted and vibrant families.
 - **Compose state** — Selected image URI is stored with `rememberSaveable`; bitmap and palette are rebuilt in `LaunchedEffect` after rotation or process recreation.
+
+p.s.: in this sample project rememberSaveable is enough. If you later add caching, repositories, or more complex state, a ViewModel would make more sense.
+
+## Project sample video
+
+https://github.com/user-attachments/assets/06e5e84a-1389-4cee-b9dc-935d1da2c878
 
 ## Tech stack
 
@@ -76,4 +84,4 @@ For design guidance on using palette colors in apps, see [Extract colors from an
 
 ## License
 
-No license file is included yet. Add one if you plan to open-source or share the project publicly.
+No license required, it is an open source sample project.
